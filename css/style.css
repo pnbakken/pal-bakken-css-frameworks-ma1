@@ -6,6 +6,10 @@ body {
   min-height: 100vh;
 }
 
+h1, .h1 {
+  font-family: "Open Sans", sans-serif !important;
+}
+
 .dark-brand {
   color: #262626 !important;
 }
@@ -19,10 +23,6 @@ body {
   font-family: "Archivo Narrow", sans-serif;
 }
 
-body {
-  font-family: "Open Sans", sans-serif !important;
-}
-
 .card-container {
   max-width: 90%;
 }
@@ -30,6 +30,47 @@ body {
 .card {
   width: 264px;
   height: 263px;
+  border-radius: 15px;
+  background: #F4F3EE;
+}
+
+#card3, #card8 {
+  background: #ffffff;
+  border: 3px solid #c32c72;
+}
+
+#card6 {
+  background: #c32c72;
+  border: 3px solid #ffffff;
+}
+
+footer {
+  background: #F4F3EE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+footer *, footer a {
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
 }
 
 :root {

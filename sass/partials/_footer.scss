@@ -1,0 +1,17 @@
+footer {
+    background: $nav-bg;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    *, a {
+        color: #8d8d8d;
+        text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    } 
+}

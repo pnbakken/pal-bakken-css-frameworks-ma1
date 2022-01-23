@@ -5,4 +5,17 @@
 .card {
     width: 264px;
     height: 263px;
+    border-radius: 15px;
+    background: $nav-bg;
+
+}
+
+#card3, #card8 {
+    background: #ffffff;
+    border: 3px solid $primary;
+}
+
+#card6 {
+    background: $primary;
+    border: 3px solid #ffffff;
 }
