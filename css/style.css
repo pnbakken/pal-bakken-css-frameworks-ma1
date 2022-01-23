@@ -1,5 +1,35 @@
-.navbar-brand {
-  color: #262626;
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.dark-brand {
+  color: #262626 !important;
+}
+
+.navbar-background {
+  background: #F4F3EE !important;
+  z-index: 1;
+}
+
+.navbar-background a {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.card-container {
+  max-width: 90%;
+}
+
+.card {
+  width: 264px;
+  height: 263px;
 }
 
 :root {
@@ -44,7 +74,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 229, 229, 229;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -53,7 +83,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #E5E5E5;
 }
 
 *,
@@ -614,7 +644,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #E5E5E5;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2261,7 +2291,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #E5E5E5;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2291,7 +2321,7 @@ progress {
 
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #E5E5E5;
   border-color: #e196b9;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
@@ -2487,7 +2517,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #E5E5E5;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2564,7 +2594,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #E5E5E5;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2688,12 +2718,12 @@ textarea.form-control-lg {
 }
 
 .form-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #E5E5E5, 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
+          box-shadow: 0 0 0 1px #E5E5E5, 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
 }
 
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
+  box-shadow: 0 0 0 1px #E5E5E5, 0 0 0 0.25rem rgba(195, 44, 114, 0.25);
 }
 
 .form-range::-moz-focus-outer {
@@ -4400,8 +4430,8 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: #E5E5E5;
+  border-color: #dee2e6 #dee2e6 #E5E5E5;
 }
 
 .nav-tabs .dropdown-menu {
@@ -5196,6 +5226,11 @@ fieldset:disabled .btn {
   border-bottom: 0;
 }
 
+.card-header-tabs .nav-link.active {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
 .card-header-pills {
   margin-right: -0.5rem;
   margin-left: -0.5rem;
@@ -5292,7 +5327,7 @@ fieldset:disabled .btn {
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #E5E5E5;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -5362,7 +5397,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-item {
-  background-color: #fff;
+  background-color: #E5E5E5;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 

@@ -1,8 +1,18 @@
 $primary: #c32c72;
+$body-bg: #E5E5E5;
+
 $brand-color: #262626;
 
-$navbar-light-active-color: $primary;
+$nav-bg: #F4F3EE;
 
-.navbar-brand {
-    color: $brand-color;
+$navbar-light-active-color: $primary; //this changes the brand colour for some reason.
+
+
+
+
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }

@@ -1,0 +1,13 @@
+.dark-brand {
+    color: $brand-color!important;
+}
+
+.navbar-background {
+    background: $nav-bg!important; 
+    z-index: 1;
+    a {
+        font-family: "Archivo Narrow", sans-serif;
+    }
+}
+
+
